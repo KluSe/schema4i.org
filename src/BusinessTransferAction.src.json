@@ -44,6 +44,10 @@
                 "@id": "s4i:BusinessTransactionDelivery",
                 "@type": "s4i:BusinessTransactionDelivery"
             },
+            "OutboundDelivery": {
+                "@id": "s4i:BusinessTransactionDelivery",
+                "@type": "s4i:BusinessTransactionDelivery"
+            },
             "Dunning": {
                 "@id": "s4i:Dunning",
                 "@type": "s4i:Dunning"
