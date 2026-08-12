@@ -12,20 +12,6 @@
     "base": [
         { "@id": "http://schema4i.org/StructuredValue" }
     ],
-    "multipletypes": {
-        "UnitCode": [
-            { "@id": "http://schema.org/Text" },
-            { "@id": "http://schema4i.org/EnumMeasurementUnitCode" },
-            { "@id": "http://schema4i.org/EnumValueUnitCode" },
-            { "@id": "http://schema4i.org/EnumEmployeeUnitCode" }
-        ],
-        "Value": [
-            { "@id": "http://schema.org/Boolean" },
-            { "@id": "http://schema.org/Text" },
-            { "@id": "http://schema.org/Number" },
-            { "@id": "http://schema4i.org/StructuredValue" }
-        ]
-    },
     "context": {
         "@context": {
             "@version": 1.1,
