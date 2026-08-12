@@ -9,6 +9,9 @@
     "parents": [
         { "@id": "http://schema4i.org/Watercraft#EngineSpecification" }
     ],
+    "base": [
+        { "@id": "http://schema4i.org/StructuredValue" }
+    ],
     "multipletypes": {
         "UnitCode": [
             { "@id": "http://schema.org/Text" },
@@ -30,7 +33,7 @@
             "schema": "http://schema.org/",
             "EngineSpecification": "schema:EngineSpecification",
             "EnginePower": {
-                "@id": "s4i:EnginePower",
+                "@id": "schema:EnginePower",
                 "@type": "s4i:QuantitativeValue"
             },
             "EngineLocation": {
@@ -43,27 +46,34 @@
         }
     },
     "playground": [{
-        "title": "A maximum QuantitativeValue",
+        "title": "A maximum EngineSpecification",
         "tab": "tab-expanded",
         "input": {
-            "@context": [
-                "http://schema4i.org/Thing.jsonld",
-                "http://schema4i.org/QuantitativeValue.jsonld",
-                {
-                    "@context": {
-                        "UnitCode": {
-                            "@id": "http://schema.org/unitCode",
-                            "@type": "http://schema.org/Text"
+            "EngineSpecification": {
+                "@context": [
+                    "http://schema4i.org/EngineLocation.jsonld",
+                    {
+                        "EngineLocation": {
+                            "@type": "@vocab",
+                            "@context": {
+                                "@vocab": "s4i:EnumEngineLocationCode#"
+                            }
                         }
                     }
+                ],
+                "EngineLocation": "01",
+                "EnginePower": {
+                    "@context": {
+                        "UnitCode": {
+                            "@type": "@vocab",
+                            "@vocab": "http://schema4i.org/EnumValueUnitCode#"
+                        }
+                    },
+                    "@type": "QuantitativeValue",
+                    "Value": 1000,
+                    "UnitCode": "70"
                 }
-            ],
-            "@type": "QuantitativeValue",
-            "AdditionalProperty": {},
-            "UnitCode": "KGM",
-            "UnitText": "Kilogramm",
-            "Value": 100,
-            "ValueReference": {}
+            }
         },
         "context": {}
     }]
