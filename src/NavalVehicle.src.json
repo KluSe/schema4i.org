@@ -48,7 +48,19 @@
             ],
             "@type": "NavalVehicle",
             "Description": "Gazelle Classic R7T Wave 2022",
-            "SailSurfaceArea": 65,
+            "SailSurfaceArea": {
+                "@context": {
+                    "UnitCode": {
+                        "@type": "@vocab",
+                        "@context": {
+                            "@vocab": "http:schema4i.org/EnumValueUnitCode#"
+                        }
+                    }
+                },
+                "@type": "QuantitativeValue",
+                "Value": 100,
+                "UnitCode": "sqm"
+            },
             "MotorLocation": "01",
             "Yield": {
                 "@context": {

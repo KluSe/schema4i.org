@@ -17,7 +17,7 @@
             "schema": "http://schema.org/",
             "SailSurfaceArea": {
                 "@id": "s4i:SailSurfaceArea",
-                "@type": "schema:Number"
+                "@type": "s4i:QuantitativeValue"
             }
         }
     },
@@ -30,7 +30,21 @@
                 "http://schema4i.org/NavalVehicle.jsonld"
             ],
             "@type": "NavalVehicle",
-            "SailSurfaceArea": 65
+            "SailSurfaceArea": {
+                "@context": {
+                    "UnitCode": {
+                        "@type": "@vocab",
+                        "@context": {
+                            "@vocab": "http:schema4i.org/EnumValueUnitCode#"
+                        }
+                    }
+                },
+                "@type": "QuantitativeValue",
+                "Value": 100,
+                "UnitCode": "sqm"
+            }
+
+
         },
         "context": {}
     }]
