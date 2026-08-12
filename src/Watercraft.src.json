@@ -23,7 +23,7 @@
             },
             "SailSurfaceArea": {
                 "@id": "s4i:SailSurfaceArea",
-                "@type": "schema:Number"
+                "@type": "s4i:QuantitativeValue"
             },
             "EngineSpecification": {
                 "@id": "s4i:EngineSpecification",
