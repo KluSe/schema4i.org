@@ -21,20 +21,13 @@
                     "@vocab": "s4i:EnumWatercraftCategoryCode"
                 }
             },
-            "Yield": {
-                "@id": "s4i:Yield",
-                "@type": "s4i:QuantitativeValue"
-            },
             "SailSurfaceArea": {
                 "@id": "s4i:SailSurfaceArea",
                 "@type": "schema:Number"
             },
-            "MotorLocation": {
-                "@id": "s4i:MotorLocation",
-                "@type": "@vocab",
-                "@context": {
-                    "@vocab": "s4i:EnumMotorLocationCode"
-                }
+            "EngineSpecification": {
+                "@id": "s4i:EngineSpecification",
+                "@type": "s4i:EngineSpecification"
             }
         }
     },
@@ -61,17 +54,30 @@
                 "Value": 100,
                 "UnitCode": "sqm"
             },
-            "MotorLocation": "01",
-            "Yield": {
-                "@context": {
-                    "UnitCode": {
-                        "@type": "@vocab",
-                        "@vocab": "http://schema4i.org/EnumValueUnitCode#"
+            "EngineSpecification": {
+                "@context": [
+                    "http://schema4i.org/EngineLocation.jsonld",
+                    {
+                        "EngineLocation": {
+                            "@type": "@vocab",
+                            "@context": {
+                                "@vocab": "s4i:EnumEngineLocationCode#"
+                            }
+                        }
                     }
-                },
-                "@type": "QuantitativeValue",
-                "Value": 1000,
-                "UnitCode": "70"
+                ],
+                "EngineLocation": "01",
+                "EnginePower": {
+                    "@context": {
+                        "UnitCode": {
+                            "@type": "@vocab",
+                            "@vocab": "http://schema4i.org/EnumValueUnitCode#"
+                        }
+                    },
+                    "@type": "QuantitativeValue",
+                    "Value": 1000,
+                    "UnitCode": "70"
+                }
             }
         },
         "context": {}

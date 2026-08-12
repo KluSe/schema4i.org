@@ -1,0 +1,70 @@
+{
+    "type": "EngineSpecification",
+    "uri": "http://schema4i.org/EngineSpecification",
+    "description": "A collection of properties that describe the engine specifications of a vehicle",
+    "links": [{
+        "url": "http://schema.org/EngineSpecification",
+        "description": "Original Schema.org type"
+    }],
+    "parents": [
+        { "@id": "http://schema4i.org/Watercraft#EngineSpecification" }
+    ],
+    "multipletypes": {
+        "UnitCode": [
+            { "@id": "http://schema.org/Text" },
+            { "@id": "http://schema4i.org/EnumMeasurementUnitCode" },
+            { "@id": "http://schema4i.org/EnumValueUnitCode" },
+            { "@id": "http://schema4i.org/EnumEmployeeUnitCode" }
+        ],
+        "Value": [
+            { "@id": "http://schema.org/Boolean" },
+            { "@id": "http://schema.org/Text" },
+            { "@id": "http://schema.org/Number" },
+            { "@id": "http://schema4i.org/StructuredValue" }
+        ]
+    },
+    "context": {
+        "@context": {
+            "@version": 1.1,
+            "s4i": "http://schema4i.org/",
+            "schema": "http://schema.org/",
+            "EngineSpecification": "schema:EngineSpecification",
+            "EnginePower": {
+                "@id": "s4i:EnginePower",
+                "@type": "s4i:QuantitativeValue"
+            },
+            "EngineLocation": {
+                "@id": "s4i:EngineLocation",
+                "@type": "@vocab",
+                "@context": {
+                    "@vocab": "s4i:EnumEngineLocationCode"
+                }
+            }
+        }
+    },
+    "playground": [{
+        "title": "A maximum QuantitativeValue",
+        "tab": "tab-expanded",
+        "input": {
+            "@context": [
+                "http://schema4i.org/Thing.jsonld",
+                "http://schema4i.org/QuantitativeValue.jsonld",
+                {
+                    "@context": {
+                        "UnitCode": {
+                            "@id": "http://schema.org/unitCode",
+                            "@type": "http://schema.org/Text"
+                        }
+                    }
+                }
+            ],
+            "@type": "QuantitativeValue",
+            "AdditionalProperty": {},
+            "UnitCode": "KGM",
+            "UnitText": "Kilogramm",
+            "Value": 100,
+            "ValueReference": {}
+        },
+        "context": {}
+    }]
+}
