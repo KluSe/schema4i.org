@@ -1,6 +1,6 @@
 {
     "type": "EngineLocation",
-    "uri": "http://schema4i.org/OutboardMotor",
+    "uri": "http://schema4i.org/EngineLocation",
     "description": "The location of a Watercraft's motor.",
     "links": [],
     "parents": [
