@@ -1,0 +1,46 @@
+{
+    "type": "MotorLocation",
+    "uri": "http://schema4i.org/OutboardMotor",
+    "description": "The location of a NavalVehicle's motor.",
+    "links": [],
+    "parents": [
+        { "@id": "http://schema4i.org/navalVehicle#OutboardMotor" }
+    ],
+    "base": [
+        { "@id": "http://schema4i.org/Property" }
+    ],
+    "multipletypes": {},
+    "context": {
+        "@context": {
+            "@version": 1.1,
+            "s4i": "http://schema4i.org/",
+            "schema": "http://schema.org/",
+            "MotorLocation": {
+                "@id": "s4i:MotorLocation",
+                "@type": "@vocab",
+                "@context": {
+                    "@vocab": "s4i:EnumMotorLocationCode#"
+                }
+            }
+        }
+    },
+    "playground": [{
+        "title": "A realistic MotorLocation",
+        "tab": "tab-expanded",
+        "input": {
+            "@context": [
+                "http://schema4i.org/MotorLocation.jsonld",
+                {
+                    "MotorLocation": {
+                        "@type": "@vocab",
+                        "@context": {
+                            "@vocab": "s4i:EnumMotorLocationCode#"
+                        }
+                    }
+                }
+            ],
+            "MotorLocation": "01"
+        },
+        "context": {}
+    }]
+}

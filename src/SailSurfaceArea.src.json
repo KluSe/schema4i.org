@@ -1,0 +1,37 @@
+{
+    "type": "SailSurfaceArea",
+    "uri": "http://schema4i.org/SailSurfaceArea",
+    "description": "The SailSurfaceArea of a NavalVehicle in meters squared",
+    "links": [],
+    "parents": [
+        { "@id": "http://schema4i.org/NavalVehicle#SailSurfaceArea" }
+    ],
+    "base": [
+        { "@id": "http://schema4i.org/Property" }
+    ],
+    "multipletypes": {},
+    "context": {
+        "@context": {
+            "@version": 1.1,
+            "s4i": "http://schema4i.org/",
+            "schema": "http://schema.org/",
+            "SailSurfaceArea": {
+                "@id": "s4i:SailSurfaceArea",
+                "@type": "schema:Number"
+            }
+        }
+    },
+    "playground": [{
+        "title": "A realistic NavalVehicle",
+        "tab": "tab-expanded",
+        "input": {
+            "@context": [
+                "http://schema4i.org/SailSurfaceArea.jsonld",
+                "http://schema4i.org/NavalVehicle.jsonld"
+            ],
+            "@type": "NavalVehicle",
+            "SailSurfaceArea": 65
+        },
+        "context": {}
+    }]
+}

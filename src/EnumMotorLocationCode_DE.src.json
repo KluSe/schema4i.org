@@ -1,0 +1,24 @@
+{
+    "type": "EnumMotorLocationCode_DE",
+    "uri": "http://schema4i.org/EnumMotorLocationCode_DE",
+    "description": "EIn Code, der die Lage eines Motors auf einem Wasserfahrzeug (NavalVehicle) beschreibt.",
+    "links": [{
+        "url": "http://schema4i.org/EnumMotorLocationCode",
+        "description": "Englische Dokumentation der Schlüsselwerte"
+    }],
+    "parents": [
+        { "@id": "http://schema4i.org/NavalVehicle#MotorLocation" }
+    ],
+    "base": [
+        { "@id": "http://schema4i.org/Enumeration" }
+    ],
+    "multipletypes": {},
+    "context": {
+        "@context": {
+            "@version": 1.1,
+            "s4i": "http://schema4i.org/",
+            "Außenborder": "s4i:EnumMotorLocationCode#01",
+            "Innenborder": "s4i:EnumMotorLocationCode#02"
+        }
+    }
+}

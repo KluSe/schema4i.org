@@ -1,0 +1,36 @@
+{
+    "type": "EnumNavalVehicleCategoryCode_DE",
+    "uri": "http://schema4i.org/EnumNavalVehicleCategoryCode_DE",
+    "description": "Ein Code, der die Art eines Wasserfahrzeugs beschreibt.",
+    "links": [{
+        "url": "http://schema4i.org/EnumNavalVehicleCategoryCode",
+        "description": "Englische Dokumentation der Schlüsselwerte"
+    }],
+    "parents": [
+        { "@id": "http://schema4i.org/NavalVehicle#Category" }
+    ],
+    "base": [
+        { "@id": "http://schema4i.org/Enumeration" }
+    ],
+    "multipletypes": {},
+    "context": {
+        "@context": {
+            "@version": 1.1,
+            "s4i": "http://schema4i.org/",                     
+            "Motorboote und Motorsegler": "s4i:EnumNavalVehicleCategoryCode#01",
+            "Motor-Wasserfahrzeug": "s4i:EnumNavalVehicleCategoryCode#02",
+            "Dampf- oder Motorgüterschiff": "s4i:EnumNavalVehicleCategoryCode#03",
+            "Tankschiff": "s4i:EnumNavalVehicleCategoryCode#04",
+            "Schlepper": "s4i:EnumNavalVehicleCategoryCode#05",
+            "Schleppkahn": "s4i:EnumNavalVehicleCategoryCode#06",
+            "Schubboot": "s4i:EnumNavalVehicleCategoryCode#07",
+            "Fischereifahrzeug für Binnenschifffahrt": "s4i:EnumNavalVehicleCategoryCode#08",
+            "Fischereifahrzeug für Wattfahrt oder kleine Küstenfahrt": "s4i:EnumNavalVehicleCategoryCode#09",
+            "Spezialschiffe mit eigenen Antrieb": "s4i:EnumNavalVehicleCategoryCode#10",
+            "Spezialschiffe ohne eigenen Antrieb": "s4i:EnumNavalVehicleCategoryCode#11",
+            "Segelboot oder -jacht": "s4i:EnumNavalVehicleCategoryCode#12",
+            "Jetboot": "s4i:EnumNavalVehicleCategoryCode#13",
+            "Ruderboot": "s4i:EnumNavalVehicleCategoryCode#14"
+        }
+    }
+}

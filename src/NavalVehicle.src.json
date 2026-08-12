@@ -1,0 +1,67 @@
+{
+    "type": "NavalVehicle",
+    "uri": "http://schema4i.org/NavalVehicle",
+    "description": "A NavalVehicle is a vehicle traveling through water for purposes of transportation, recreation, and exercise.",
+    "links": [],
+    "parents": [],
+    "base": [
+        { "@id": "http://schema4i.org/Vehicle" }
+    ],
+    "multipletypes": {},
+    "context": {
+        "@context": {
+            "@version": 1.1,
+            "s4i": "http://schema4i.org/",
+            "schema": "http://schema.org/",
+            "NavalVehicle": "s4i:NavalVehicle",
+            "Category": {
+                "@id": "s4i:Category",
+                "@type": "@vocab",
+                "@context": {
+                    "@vocab": "s4i:EnumNavalVehicleCategoryCode"
+                }
+            },
+            "Yield": {
+                "@id": "s4i:Yield",
+                "@type": "s4i:QuantitativeValue"
+            },
+            "SailSurfaceArea": {
+                "@id": "s4i:SailSurfaceArea",
+                "@type": "schema:Number"
+            },
+            "MotorLocation": {
+                "@id": "s4i:MotorLocation",
+                "@type": "@vocab",
+                "@context": {
+                    "@vocab": "s4i:EnumMotorLocationCode"
+                }
+            }
+        }
+    },
+    "playground": [{
+        "title": "A maximal NavalVehicle",
+        "tab": "tab-expanded",
+        "input": {
+            "@context": [
+                "http://schema4i.org/NavalVehicle",
+                "http://schema4i.org/Vehicle"
+            ],
+            "@type": "NavalVehicle",
+            "Description": "Gazelle Classic R7T Wave 2022",
+            "SailSurfaceArea": 65,
+            "MotorLocation": "01",
+            "Yield": {
+                "@context": {
+                    "UnitCode": {
+                        "@type": "@vocab",
+                        "@vocab": "http://schema4i.org/EnumValueUnitCode#"
+                    }
+                },
+                "@type": "QuantitativeValue",
+                "Value": 1000,
+                "UnitCode": "70"
+            }
+        },
+        "context": {}
+    }]
+}
