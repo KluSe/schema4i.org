@@ -12,6 +12,7 @@
     "base": [
         { "@id": "http://schema4i.org/StructuredValue" }
     ],
+    "multipletypes": [],
     "context": {
         "@context": {
             "@version": 1.1,
