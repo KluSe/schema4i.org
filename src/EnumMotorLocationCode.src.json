@@ -1,13 +1,13 @@
 {
     "type": "EnumMotorLocationCode",
     "uri": "http://schema4i.org/EnumMotorLocationCode",
-    "description": "A code for the location of a motor on a NavalVehicle",
+    "description": "A code for the location of a motor on a Watercraft",
     "links": [{
         "url": "http://schema4i.org/EnumMotorLocationCode_DE",
         "description": "Original German documentation"
     }],
     "parents": [
-        { "@id": "http://schema4i.org/NavalVehicle#MotorLocation" }
+        { "@id": "http://schema4i.org/Watercraft#MotorLocation" }
     ],
     "base": [
         { "@id": "http://schema4i.org/Enumeration" }

@@ -1,7 +1,7 @@
 {
-    "type": "NavalVehicle",
-    "uri": "http://schema4i.org/NavalVehicle",
-    "description": "A NavalVehicle is a vehicle traveling through water for purposes of transportation, recreation, and exercise.",
+    "type": "Watercraft",
+    "uri": "http://schema4i.org/Watercraft",
+    "description": "A Watercraft is a vehicle traveling through water for purposes of transportation, recreation, and exercise.",
     "links": [],
     "parents": [],
     "base": [
@@ -13,12 +13,12 @@
             "@version": 1.1,
             "s4i": "http://schema4i.org/",
             "schema": "http://schema.org/",
-            "NavalVehicle": "s4i:NavalVehicle",
+            "Watercraft": "s4i:Watercraft",
             "Category": {
                 "@id": "s4i:Category",
                 "@type": "@vocab",
                 "@context": {
-                    "@vocab": "s4i:EnumNavalVehicleCategoryCode"
+                    "@vocab": "s4i:EnumWatercraftCategoryCode"
                 }
             },
             "Yield": {
@@ -39,14 +39,14 @@
         }
     },
     "playground": [{
-        "title": "A maximal NavalVehicle",
+        "title": "A maximal Watercraft",
         "tab": "tab-expanded",
         "input": {
             "@context": [
-                "http://schema4i.org/NavalVehicle",
+                "http://schema4i.org/Watercraft",
                 "http://schema4i.org/Vehicle"
             ],
-            "@type": "NavalVehicle",
+            "@type": "Watercraft",
             "Description": "Gazelle Classic R7T Wave 2022",
             "SailSurfaceArea": {
                 "@context": {

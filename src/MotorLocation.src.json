@@ -1,10 +1,10 @@
 {
     "type": "MotorLocation",
     "uri": "http://schema4i.org/OutboardMotor",
-    "description": "The location of a NavalVehicle's motor.",
+    "description": "The location of a Watercraft's motor.",
     "links": [],
     "parents": [
-        { "@id": "http://schema4i.org/navalVehicle#OutboardMotor" }
+        { "@id": "http://schema4i.org/Watercraft#OutboardMotor" }
     ],
     "base": [
         { "@id": "http://schema4i.org/Property" }
