@@ -35,7 +35,7 @@
                     "UnitCode": {
                         "@type": "@vocab",
                         "@context": {
-                            "@vocab": "http:schema4i.org/EnumValueUnitCode#"
+                            "@vocab": "http://schema4i.org/EnumValueUnitCode#"
                         }
                     }
                 },
